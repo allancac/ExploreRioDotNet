@@ -4,3 +4,49 @@ GET {{ExploreRio.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+
+
+GET {{ExploreRio.Api_HostAddress}}/
+Accept: application/json
+###
+
+GET {{ExploreRio.Api_HostAddress}}/api/v1/trilhas
+Accept: application/json
+###
+
+GET {{ExploreRio.Api_HostAddress}}/api/v1/trilhas/3
+Accept: application/json
+###
+
+POST {{ExploreRio.Api_HostAddress}}/api/v1/trilhas
+Content-Type: application/json
+
+{
+  "name": "Trilha Cachoeira do Mendanha",
+  "description": "Trilha média no Parque Estadual do Mendanha com visitação a 3 lagos naruais e cascatas.",
+  "keywords": "tour, floresta urbana, cachoeira, cascata, rapel",
+  "distance": 2,
+  "time": 1.0,
+  "difficult": "media",
+  "region": "zona oeste"
+}
+###
+
+PUT {{ExploreRio.Api_HostAddress}}/api/v1/trilhas/6
+Content-Type: application/json
+
+{
+  "name": "Trilha do Circuito de Cachoeiras do Mendanha",
+  "description": "Trilha no Parque Estadual do Mendanha com visitação a 3 lagos naruais e cascatas.",
+  "keywords": "tour, floresta urbana, cachoeira, cascata, rapel",
+  "distance": 3,
+  "time": 2.0,
+  "difficult": "media",
+  "region": "zona oeste"
+}
+###
+
+DELETE {{ExploreRio.Api_HostAddress}}/api/v1/trilhas/6
+Accept: application/json
+###
